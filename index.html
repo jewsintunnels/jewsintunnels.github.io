@@ -1,1 +1,100 @@
-jew jew jew jew jew jew jew jew jew jew jew jew jew jew jew 
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JIT</title>
+<style>
+  body {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: blue;
+    color: #fff;
+  }
+  .large-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffffff; /* white background */
+    color: #000000; /* black text */
+    font-size: 18px; /* adjust font size as needed */
+    border: 2px solid #000000; /* black border */
+    border-radius: 8px; /* rounded corners */
+    text-decoration: none; /* remove underline */
+    cursor: pointer; /* cursor style */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* smooth transition */
+  }
+  .large-button:hover {
+    background-color: blue;
+    color: #ffffff; /* white text on hover */
+    border-color: #ffffff; /* white border on hover */
+  }
+  .container {
+    text-align: center;
+    padding: 50px;
+  }
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  .about, .buy {
+  }
+  .about, .buy {
+    padding: 50px;
+    background-color: blue;
+      color: white;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h2>Jews in Tunnels</h2>
+  </div>
+  <div>
+    <button class="large-button" onclick="scrollToAbout()">About</button>
+    <button class="large-button" onclick="scrollToBuy()">Buy</button>
+  </div>
+</header>
+
+<div class="container">
+<div style="display:flex;flex-direction:row;justify-content:center;align-items:center">
+  <h1>JIT</h1>
+  <div style="width:2%"></div>
+  <img style="border-width:10px;border-radius:5px;border-color:black;border-style:solid;" src="banner.png" alt="banner" width="600">
+</div>
+</div>
+
+<div class="about" id="about">
+  <h2>About JIT</h2>
+  <p>Tunnels, the ultimate form of transportation in New York City. We are JIT.</p>
+</div>
+
+<div class="buy" id="buy">
+  <h2>Buy JIT</h2>
+  <p>Swap your Solana for JIT on <a style="color:white" href="https://raydium.io/swap/?outputCurrency=9y4zGixmVFGj47RCtbjgdjqWRASnp2HM1X8t7SHoM3HA">Raydium</a>.</p>
+</div>
+
+<script>
+  function scrollToAbout() {
+    document.querySelector('.about').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function scrollToBuy() {
+    document.querySelector('.buy').scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>
