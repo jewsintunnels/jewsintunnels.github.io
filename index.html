@@ -13,6 +13,7 @@
   body {
     font-family: "Rubik", sans-serif;
     margin: 0;
+    background-color: #e8e8e8;
     padding: 0;
   }
   header {
@@ -23,22 +24,34 @@
     background-color: blue;
     color: #fff;
   }
+  .glow {
+  }
+  .glow:hover {
+      transition: color 0.3s;
+      color: #40f540;
+  }
   .large-button {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #ffffff; /* white background */
-    color: #000000; /* black text */
-    font-size: 18px; /* adjust font size as needed */
-    border: 2px solid #000000; /* black border */
-    border-radius: 8px; /* rounded corners */
-    text-decoration: none; /* remove underline */
-    cursor: pointer; /* cursor style */
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* smooth transition */
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      font-size: 30px;
+      font-family: inherit;
+      color: inherit;
+      text-decoration: none; /* remove underline */
+      cursor: pointer;
+      transition: color 0.3s;
   }
   .large-button:hover {
-    background-color: blue;
-    color: #ffffff; /* white text on hover */
-    border-color: #ffffff; /* white border on hover */
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      font-size: 30px;
+      font-family: inherit;
+      color: green;
+      text-decoration: none; /* remove underline */
+      cursor: pointer;
   }
   .container {
     text-align: center;
@@ -48,12 +61,23 @@
     font-size: 3em;
     margin-bottom: 20px;
   }
-  .about, .buy {
+  h2 {
+    font-size: 3em;
   }
-  .about, .buy {
+  .top {
+    background-color: blue;
+    color: white;
+  }
+  .about {
+    padding: 50px;
+    background-color: #e8e8e8;
+    color: black;
+    margin-top: 20px;
+  }
+  .buy {
     padding: 50px;
     background-color: blue;
-      color: white;
+    color: white;
     margin-top: 20px;
   }
 </style>
@@ -61,30 +85,36 @@
 <body>
 <header>
   <div>
-    <h2>Jews in Tunnels</h2>
+    <h2 class="glow">Jews in Tunnels</h2>
   </div>
-  <div>
-    <button class="large-button" onclick="scrollToAbout()">About</button>
-    <button class="large-button" onclick="scrollToBuy()">Buy</button>
+  <div style="display:flex;justify-content:space-between;">
+    <div>
+      <button class="large-button" onclick="scrollToAbout()">About</button>
+    </div>
+    <div style="width:50px"></div>
+    <div>
+      <button class="large-button" onclick="scrollToBuy()">Buy</button>
+    </div>
   </div>
 </header>
 
-<div class="container">
-<div style="display:flex;flex-direction:row;justify-content:center;align-items:center">
-  <h1>JIT</h1>
-  <div style="width:2%"></div>
-  <img style="border-width:10px;border-radius:5px;border-color:black;border-style:solid;" src="banner.png" alt="banner" width="600">
-</div>
+<div class="top" id="top">
+  <div class="container">
+    <div style="display:flex;flex-direction:row;justify-content:center;align-items:center">
+      <h1 class="glow" style="font-size:150px">$JIT </h1>
+      <div style="width:2%"></div>
+      <img style="border-width:10px;border-radius:5px;border-color:black;border-style:solid;" src="banner.png" alt="banner" width="1000">
+    </div>
+  </div>
 </div>
 
 <div class="about" id="about">
   <h2>About JIT</h2>
   <p>Tunnels, the ultimate form of transportation in New York City. We are JIT.</p>
 </div>
-
 <div class="buy" id="buy">
   <h2>Buy JIT</h2>
-  <p>Swap your Solana for JIT on <a style="color:white" href="https://raydium.io/swap">Raydium</a>.</p>
+  <p>Swap your Solana for JIT on <a style="color:white" href="https://raydium.io/swap/?outputCurrency=9y4zGixmVFGj47RCtbjgdjqWRASnp2HM1X8t7SHoM3HA">Raydium</a>.</p>
 </div>
 
 <script>
