@@ -3,7 +3,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
 
 <head>
 <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 <title>JIT</title>
 <style>
   body {
-    font-family: "Rubik", sans-serif;
+    font-family: "Lugrasimo", sans-serif;
     margin: 0;
     background-color: #e8e8e8;
     padding: 0;
@@ -72,19 +72,30 @@
     padding: 50px;
     background-color: #e8e8e8;
     color: black;
-    margin-top: 20px;
   }
-  .buy {
+  .roadmap {
     padding: 50px;
     background-color: #0132A8;
     color: white;
-    margin-top: 20px;
   }
-  .info {
+  .buy {
     padding: 50px;
     background-color: #e8e8e8;
     color: black;
-    margin-top: 20px;
+  }
+  .info {
+    padding: 50px;
+    background-color: #0132A8;
+    color: white;
+  }
+  .disclaimer {
+    padding: 50px;
+    background-color: #0500a1;
+    color: white;
+  }
+  .social a {
+    text-decoration: none;
+    text-transform: capitalize;
   }
 </style>
 </head>
@@ -101,9 +112,17 @@
     <div>
       <button class="large-button" onclick="scrollToBuy()">Buy</button>
     </div>
+    <div style="width:50px"></div>
+    <div>
+      <button class="large-button" onclick="scrollToRoadmap()">Roadmap</button>
+    </div>
+    <div style="width:50px"></div>
+    <div>
+      <button class="large-button" onclick="scrollToGoyim()">Goyim</button>
+    </div>
   </div>
 </header>
-<marquee style="font-size:30px;background-color:#001851;color:#40f540">
+<marquee style="font-family:times;font-size:30px;background-color:#001851;color:#40f540">
 <span>$JIT ▲69420%          </span>
 <span>$JIT ▲69420%          </span>
 <span>$JIT ▲69420%          </span>
@@ -117,57 +136,104 @@
       <br/>
     </div>
   </div>
-  <div style="display: flex; flex-direction: column; justify-content: center; margin: 0% 20%">
+  <div class="social" style="display: flex; flex-direction: column; justify-content: center; margin: 0% 20%">
     <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 5px;">
       <a target="_blank" style="display: flex; align-items: center; gap: 3px; color: white;" href="https://discord.gg/dwbxFTxRh9">
         <img alt="discord" src="discord.png" width="41">
-        <span style="font-size: 14px;">discord</span>
+        <span style="font-size: 20px;">discord</span>
       </a>
-      <a target="_blank" style="display: flex; align-items: center; gap: 3px; color: white;" href="https://x.com/jewsintunnels">
+      <a target="_blank" style="display: flex; align-items: center; gap: 3px; color: white;" href="https://twitter.com/JITCoinSOL">
         <img alt="twitter" src="twitter.png" width="41">
-        <span style="font-size: 14px;">twitter</span>
+        <span style="font-size: 20px;">twitter</span>
       </a>
       <a target="_blank" style="display: flex; align-items: center; gap: 3px; color: white;" href="https://dexscreener.com/solana/asdf">
         <img alt="chart" src="dexscreener.png" width="41">
-        <span style="font-size: 14px;">dexscreener</span>
+        <span style="font-size: 20px;">dexscreener</span>
       </a>
       <a target="_blank" style="display: flex; align-items: center; gap: 3px; color: white;" href="https://asdf.com">
         <img alt="dextools" src="dextools.png" width="41">
-        <span style="font-size: 14px;">Dextools</span>
+        <span style="font-size: 20px;">Dextools</span>
       </a>
     </div>
+    <br/>
+    <br/>
+    <div style="border-color:white;border-width:1;border-style:solid;border-radius:5px;padding:5px;text-align:center;">CA: 9PQ9Jv1LNBDLFxZ5WMgbkbBrLLgnpmnZ1QraReAyzYh2</div>
   </div>
-    <br/>
-    <br/>
     <br/>
     <br/>
 </div>
 
 <div class="about" id="about">
-  <h2>About $JIT</h2>
+  <h2>בקשר ל $JIT (About $JIT)</h2>
   <div style="display:flex;font-size:17px;justify-content:space-between;line-height:2">
-    <div style="width:50vh">
+    <div style="width:50%;margin-right:50px;font-size:calc(1vh + 1vmin)">
       <p>Tunnels, the ultimate form of transportation in New York City. We are JIT.</p>
       Rabbi Shlomi needs more tunnelers to construct his covert NYC tunnel project. He must tunnel to congress to pass his new bill on cryptocurrency tax deductions before passover. Support the tunnels and dump your shekels for $JIT today!
     </div>
-    <div>
-      <video style="width:50vh" muted autoplay controls>
+    <div style="width:50%; display:flex;">
+      <video style="width:49%" muted autoplay controls>
         <source src="vid.mp4" type="video/mp4">
           Your browser does not support the video tag. Fix ur shit
       </video>
-      <video style="width:50vh" muted autoplay controls>
+      <div style="width:2%"></div>
+      <video style="width:49%" muted autoplay controls>
         <source src="vid.mp4" type="video/mp4">
           Your browser does not support the video tag. Fix ur shit
       </video>
     </div>
   </div>
 </div>
+<div class="roadmap" id="roadmap">
+  <h2>מפת דרכים (Roadmap)</h2>
+  <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="width: 50%">
+      <img width="100%" src="roadmap.png"/>
+    </div>
+    <div>
+    <ul style="line-height: 2; list-style-type: disc; margin-left: 20px; font-size:calc(1vh + 1vmin)">
+      <li>Shaloam! Launch memes</li>
+      <li>Shagoyim! Dig tunnels</li>
+      <li>Establish partnership with AIPAC</li>
+      <li>Mor memes, hashugunnah!</li>
+      <li>Oy vey! shuting down the competition</li>
+      <li>$JIT on NYC bilbord</li>
+      <li>Mor memes</li>
+      <li>$JIT replaces the Shekel</li>
+      <li>Provide internships for $JIT holders in Politics, Media, and Finance</li>
+    </ul>
+    </div>
+  </div>
+</div>
 <div class="buy" id="buy">
-  <h2>Buy JIT</h2>
-  <p>Swap your Solana for JIT on <a style="color:white" href="https://raydium.io/swap/?outputCurrency=9y4zGixmVFGj47RCtbjgdjqWRASnp2HM1X8t7SHoM3HA">Raydium</a>.</p>
+  <h2>קנה $JIT בדרך הכשרה (Buy $JIT the Kosher Way)</h2>
+    <div style="font-size:calc(1vh + 1vmin)">
+      <h3>ESTABLISHING A WALLET</h2>
+      <p>Download Phantom or select a kosher wallet from the app store or Google
+      Play, all provided free of charge as blessings. For those navigating from a
+      desktop, procure the Google Chrome extension Phantom.</p>
+
+      <h3>ACQUIRING SOL</h2>
+      <p>To journey into the realm of $JIT, it is imperative to possess SOL within
+      your wallet. Should your coffers lack SOL, you may procure it directly
+      on Phantom, transfer from another wallet, or acquire it from an alternate
+      exchange and send it forthwith to your wallet.</p>
+
+      <h3>NAVIGATING TO RAYDIUM</h2>
+      <p>Connect with Raydium. Open your browser, preferably Google Chrome, and
+      direct it to Raydium as one might navigate toward a sacred text. Upon arrival,
+      establish connection with your wallet. Insert the $JIT token address
+      into Raydium, select $JIT, and affirm your selection. When called upon by
+      Phantom to provide a wallet signature, comply forthwith with pious devotion.</p>
+    </div>
 </div>
 <div class="info" id="info">
-  <img style="" src="trump.png" alt="twitter" width="1000">
+  <h2>הגויים אומר (The Goyim Says)</h2>
+  <img style="display:block;margin:auto;" src="trump.png" alt="twitter" width="1000">
+</div>
+<div class="disclaimer" id="disclaimer">
+  $JIT has no association with the World Headquarters of the Chabad-Lubavitch Hasidic movement or the state of Israel. This token is simply a meme
+coin with no intrinsic value or expectation of financial return.
+© 2024 by $JIT. All rights reserved.
 </div>
 
 <script>
@@ -177,6 +243,12 @@
 
   function scrollToBuy() {
     document.querySelector('.buy').scrollIntoView({ behavior: 'smooth' });
+  }
+  function scrollToRoadmap() {
+    document.querySelector('.roadmap').scrollIntoView({ behavior: 'smooth' });
+  }
+  function scrollToGoyim() {
+    document.querySelector('.info').scrollIntoView({ behavior: 'smooth' });
   }
 </script>
 </body>
